@@ -221,4 +221,16 @@ saas-bi-dashboard/
 
 ---
 
+## Future Improvements
+- Connect to a live database — replace the CSV files with a direct
+   MySQL connection so the notebook updates automatically when new
+   subscription data is added rather than requiring a manual re-run.
+- Build automated alerts — the revenue at risk signals exist in the
+   data but require someone to run the notebook to see them. A
+   scheduled Python script that emails a weekly at-risk customer list
+   to the customer success team would make the analysis operational
+   rather than just analytical.
+  
+---
+
 **Patience Anono** · PA Data Analytics · [padataanalytics.com](https://padataanalytics.com) · hello@padataanalytics.com
