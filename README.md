@@ -161,49 +161,6 @@ The final section saves seven pre-aggregated CSV files to a `looker_export/` fol
 | `support_summary.csv` | 141 | Support — CSAT and ticket trends |
 | `mrr_at_risk.csv` | 3 | Risk summary — MRR at risk by category |
 
-To connect to Looker Studio: upload each file to a separate tab in one Google Sheet, share the sheet publicly, then in Looker Studio go to Add Data → Google Sheets and select the spreadsheet. Each tab feeds its corresponding dashboard page.
-
----
-
-## How to run it
-
-**1. Clone the repository**
-
-```bash
-git clone https://github.com/PatienceAnono/saas-bi-dashboard.git
-cd saas-bi-dashboard
-```
-
-**2. Install dependencies**
-
-```bash
-pip install pandas numpy matplotlib seaborn faker
-```
-
-**3. Generate the data** (if you do not already have the CSV files)
-
-```bash
-python generate_saas_data.py
-```
-
-**4. Open the notebook**
-
-```bash
-jupyter notebook SaaS_Dashboard_EDA_v2.ipynb
-```
-
-**5. Update the file path**
-
-In Section 1, update `DATA_PATH` to match where your CSV files are saved:
-
-```python
-DATA_PATH = 'C:/Users/YourName/path/to/your/data/'
-```
-
-Use forward slashes — Python on Windows handles them correctly.
-
-**6. Run all cells** — top to bottom. The `looker_export/` folder is created automatically when Section 12 runs.
-
 ---
 
 ## Project structure
