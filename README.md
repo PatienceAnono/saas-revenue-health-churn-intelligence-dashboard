@@ -239,7 +239,7 @@ saas-bi-dashboard/
 
 ---
 
-## Key definitions — plain language
+## Key definitions
 
 **MRR** (Monthly Recurring Revenue) — the total amount customers pay each month. This is the heartbeat metric for any subscription business.
 
